@@ -1,18 +1,23 @@
 :root {
   --azul: #4e92df;
   --negro: #000;
-  --gris: #888888;
+  --gris: #969696;
   --title-section: #676767;
-  --track-borde: #ececec;
+  --track-borde: #eeeeee;
   --title-acordeon: #535353;
-  --title-acordeon-false: #b3b3b3; }
+  --title-acordeon-false: #b3b3b3;
+  --bg-input: #fcfcfc;
+  --bd-input: #eeeeee;
+  --placeholder-input: #bcbcbc; }
 
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .btn_calificalo {
   background-color: var(--azul);
-  font-size: 12px; }
+  font-size: 12px;
+  border: none;
+  text-transform: uppercase; }
 
 .padding_section {
   padding: 120px 0; }
@@ -36,6 +41,10 @@ body {
   .section_more i {
     margin-left: 2px; }
 
+.shadow_image {
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
+
 /******************
 MENU
 ******************/
@@ -46,15 +55,28 @@ MENU
     font-size: 25px;
     font-weight: 900;
     color: var(--white); }
+  .main_menu .menu ul li:not(:last-child) {
+    margin-right: 10px; }
+  .main_menu .menu ul li:nth-last-of-type(2) {
+    margin-right: 40px; }
   .main_menu .menu ul li .nav-link {
-    font-size: 12px;
-    color: var(--white); }
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.6px; }
+    .main_menu .menu ul li .nav-link i {
+      font-size: 10px; }
+  .main_menu .menu ul li .btn-menu {
+    padding: 8px 30px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.6px; }
 
 /******************
 BANNER
 ******************/
 .main_banner {
-  height: calc(100vh - 51px);
+  height: 100vh;
   background-image: url("../img/banner.jpeg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -83,11 +105,21 @@ BANNER
       font-weight: 400;
       line-height: 1.7;
       font-size: 17px; }
+    .main_banner .banner_left .banner_year .banner_icon {
+      width: 40px;
+      height: 40px;
+      background-color: white;
+      border-radius: 50%;
+      text-align: center; }
+      .main_banner .banner_left .banner_year .banner_icon i {
+        color: #000;
+        line-height: 40px;
+        font-size: 8px; }
     .main_banner .banner_left .banner_year p {
-      margin-left: 10px;
+      margin-left: 15px;
       font-size: 12px; }
-    .main_banner .banner_left .banner_year i {
-      color: #000; }
+      .main_banner .banner_left .banner_year p span {
+        margin-left: 10px; }
 
 /******************
 DESCRIPTION
@@ -113,7 +145,29 @@ DESCRIPTION
 .main_description .main_course .section_description {
   padding-right: 0;
   width: 55%;
-  margin: 0 auto; }
+  margin: 0 auto 80px; }
+
+.main_description .main_form {
+  margin-bottom: 80px; }
+  .main_description .main_form input,
+  .main_description .main_form select {
+    background-color: var(--bg-input);
+    font-weight: 300;
+    font-size: 14px;
+    border-color: var(--bd-input); }
+  .main_description .main_form input::-webkit-input-placeholder {
+    color: var(--placeholder-input); }
+  .main_description .main_form input:-ms-input-placeholder {
+    color: var(--placeholder-input); }
+  .main_description .main_form input::-ms-input-placeholder {
+    color: var(--placeholder-input); }
+  .main_description .main_form input::placeholder {
+    color: var(--placeholder-input); }
+  .main_description .main_form .custom-select {
+    background-image: none; }
+  .main_description .main_form .input-group-append label {
+    border-color: var(--bd-input);
+    background-color: var(--bg-input); }
 
 .main_description .main_track {
   border: 1px solid var(--track-borde);
@@ -123,8 +177,10 @@ DESCRIPTION
   margin-bottom: 30px; }
   .main_description .main_track .track_description {
     color: var(--gris);
-    font-size: 15px;
-    margin: 13px 0; }
+    margin: 13px 0;
+    font-size: 14px; }
+  .main_description .main_track .track_title {
+    font-size: 14px; }
 
 /******************
 INSCRIPTION
@@ -169,36 +225,41 @@ DIFFERENT
   width: 55%;
   margin: 0 auto 80px; }
 
-.main_different .different_card {
-  border: none; }
-  .main_different .different_card .card-header {
-    background-color: transparent; }
-    .main_different .different_card .card-header .different_title_acordeon {
-      color: var(--title-acordeon);
-      font-size: 12px; }
-      .main_different .different_card .card-header .different_title_acordeon:hover {
-        text-decoration: none; }
-      .main_different .different_card .card-header .different_title_acordeon i {
-        font-size: 11px;
-        margin-right: 5px; }
-    .main_different .different_card .card-header [aria-expanded="false"] {
-      color: var(--title-acordeon-false); }
-    .main_different .different_card .card-header [aria-expanded="false"] .icon_down {
-      display: inline-block; }
-    .main_different .different_card .card-header [aria-expanded="true"] .icon_down {
-      display: none; }
-    .main_different .different_card .card-header [aria-expanded="false"] .icon_up {
-      display: none; }
-    .main_different .different_card .card-header [aria-expanded="true"] .icon_up {
-      display: inline-block; }
-  .main_different .different_card .acordeon_border {
+.main_different .acordion {
+  margin-top: 30px; }
+  .main_different .acordion .different_card {
     border: none; }
-  .main_different .different_card .card-body {
-    padding: 0 20px; }
-    .main_different .different_card .card-body .description_acordeon {
-      padding-right: 0;
-      margin: 10px 0;
-      width: 100%; }
+    .main_different .acordion .different_card .card-header {
+      background-color: transparent;
+      padding: 10px 0 0 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.03); }
+      .main_different .acordion .different_card .card-header .different_title_acordeon {
+        color: var(--title-acordeon);
+        font-size: 12px;
+        padding-left: 0; }
+        .main_different .acordion .different_card .card-header .different_title_acordeon:hover {
+          text-decoration: none; }
+        .main_different .acordion .different_card .card-header .different_title_acordeon i {
+          font-size: 11px;
+          margin-right: 5px; }
+      .main_different .acordion .different_card .card-header [aria-expanded="false"] {
+        color: var(--title-acordeon-false); }
+      .main_different .acordion .different_card .card-header [aria-expanded="false"] .icon_down {
+        display: inline-block; }
+      .main_different .acordion .different_card .card-header [aria-expanded="true"] .icon_down {
+        display: none; }
+      .main_different .acordion .different_card .card-header [aria-expanded="false"] .icon_up {
+        display: none; }
+      .main_different .acordion .different_card .card-header [aria-expanded="true"] .icon_up {
+        display: inline-block; }
+    .main_different .acordion .different_card .acordeon_border {
+      border: none; }
+    .main_different .acordion .different_card .card-body {
+      padding: 0; }
+      .main_different .acordion .different_card .card-body .description_acordeon {
+        padding-right: 0;
+        margin: 20px 0;
+        width: 100%; }
 
 /******************
 BANNER FOOTER
@@ -208,7 +269,8 @@ BANNER FOOTER
 
 .main_banner_footer .banner_footer_image {
   height: 180px;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
   .main_banner_footer .banner_footer_image img {
     display: block;
     width: 100%;
@@ -257,3 +319,26 @@ FOOTER
     margin-right: 25px; }
   .footer a {
     color: var(--gris); }
+
+/******************
+MEDIA QUERIE
+******************/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .main_description .description_right img {
+    width: 100%; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .main_different .description_left img {
+    width: 100%; }
+  .main_menu .menu.navbar-collapse {
+    position: absolute;
+    z-index: 3;
+    top: 100%; } }
+
+@media screen and (max-width: 767px) {
+  .main_menu .menu.navbar-collapse {
+    position: absolute;
+    z-index: 3;
+    top: 100%; }
+  .main_banner .banner_left {
+    margin-top: 150px; } }

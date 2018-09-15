@@ -33,31 +33,31 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="menu collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav align-items-lg-center">
                             <li class="nav-item">
                                 <!--active-->
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#">Home <i class="fas fa-angle-down"></i><span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Pages</a>
+                                <a class="nav-link" href="#">Pages <i class="fas fa-angle-down"></i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
+                                <a class="nav-link" href="#">Blog <i class="fas fa-angle-down"></i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Shop</a>
+                                <a class="nav-link" href="#">Shop <i class="fas fa-angle-down"></i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
+                                <a class="nav-link" href="#">Portfolio <i class="fas fa-angle-down"></i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Blocks</a>
+                                <a class="nav-link" href="#">Blocks <i class="fas fa-angle-down"></i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Elements</a>
+                                <a class="nav-link" href="#">Elements <i class="fas fa-angle-down"></i></a>
                             </li>
                             <li class="nav-item">
-                                <button class="btn btn-primary btn_calificalo">SIGN UP</button>
+                                <button class="btn btn-primary btn_calificalo btn-menu">Registrar</button>
                             </li>
                         </ul>
                     </div>
@@ -72,8 +72,8 @@
                         <p class="banner_description">Stack offers a clean and contemporary llok to suit a range of
                             purposes from corporate, tech startup, marketing site to digital storefront.</p>
                         <div class="banner_year d-flex align-items-center">
-                            <i class="fas fa-play"></i>
-                            <p>Arrows 2016 Alumni Wrapup <span>104 Seconds</span></p>
+                            <span class="banner_icon"><i class="fas fa-play"></i></span>
+                            <p>2016 Alumni Wrapup <span>104 Seconds</span></p>
                         </div>
                     </div>
                 </div>
@@ -107,69 +107,91 @@
                         <p class="section_description text-center">Our vision is for strong and resilient students
                             where all have adequate access to the support structures required to succeed. Browse
                             courses below to find out more.</p>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
                     </div>
                 </div>
-
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="main_track">
-                                <h4 class="track_title">Mechanical Engineering</h4>
-                                <p class="track_description">Following BEM conventions for readability</p>
-                                <span class="section_more">Learn More</span>
+                <div class="col-md-12">
+                    <form action="" method="post">
+                        <div class="main_form">
+                            <div class="row">
+                                <!-- input -->
+                                <div class="form-group col-lg-6">
+                                    <input type="text" class="form-control" id="keywords" placeholder="keywords">
+                                </div>
+                                <!-- select -->
+                                <div class="input-group mb-3 col-lg-4">
+                                    <select class="custom-select" id="inputGroupSelect02">
+                                        <option selected disabled>Select An Option</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <div class="input-group-append">
+                                        <label class="input-group-text" for="inputGroupSelect02"><i class="fas fa-align-justify"></i></label>
+                                    </div>
+                                </div>
+                                <!-- button -->
+                                <div class="col-lg-2">
+                                    <button class="btn btn-primary btn-block" type="submit">Search</button>
+                                </div>
                             </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="main_track">
+                            <h4 class="track_title">Mechanical Engineering</h4>
+                            <p class="track_description">Following BEM conventions for readability</p>
+                            <span class="section_more">Learn More</span>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="main_track">
-                                <h4 class="track_title">Media & Communications</h4>
-                                <p class="track_description">Following BEM conventions for readability</p>
-                                <span class="section_more">Learn More</span>
-                            </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="main_track">
+                            <h4 class="track_title">Media & Communications</h4>
+                            <p class="track_description">Following BEM conventions for readability</p>
+                            <span class="section_more">Learn More</span>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="main_track">
-                                <h4 class="track_title">Biomedical Engineering</h4>
-                                <p class="track_description">Following BEM conventions for readability</p>
-                                <span class="section_more">Learn More</span>
-                            </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="main_track">
+                            <h4 class="track_title">Biomedical Engineering</h4>
+                            <p class="track_description">Following BEM conventions for readability</p>
+                            <span class="section_more">Learn More</span>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="main_track">
-                                <h4 class="track_title">Psychological Sciences</h4>
-                                <p class="track_description">Following BEM conventions for readability</p>
-                                <span class="section_more">Learn More</span>
-                            </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="main_track">
+                            <h4 class="track_title">Psychological Sciences</h4>
+                            <p class="track_description">Following BEM conventions for readability</p>
+                            <span class="section_more">Learn More</span>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="main_track">
-                                <h4 class="track_title">Masters of Teaching</h4>
-                                <p class="track_description">Following BEM conventions for readability</p>
-                                <span class="section_more">Learn More</span>
-                            </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="main_track">
+                            <h4 class="track_title">Masters of Teaching</h4>
+                            <p class="track_description">Following BEM conventions for readability</p>
+                            <span class="section_more">Learn More</span>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="main_track">
-                                <h4 class="track_title">Master of Psychology</h4>
-                                <p class="track_description">Following BEM conventions for readability</p>
-                                <span class="section_more">Learn More</span>
-                            </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="main_track">
+                            <h4 class="track_title">Master of Psychology</h4>
+                            <p class="track_description">Following BEM conventions for readability</p>
+                            <span class="section_more">Learn More</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
 
     <!-- inscription -->
     <div class="main_inscription">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-5">
                     <div class="inscription_right d-flex flex-column justify-content-center">
                         <h4 class="section_title">Applications are now open</h4>
                         <p class="inscription_description section_description">We're now taking enrolments for Semester
@@ -194,13 +216,13 @@
                         all have adequate access to the support structures required to succeed. Browse courses below to
                         find out more.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="description_left">
-                        <img class="" src="img/different-1.png" alt="">
+                        <img class="shadow_image" src="img/different-1.png" alt="">
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div id="accordion">
+                <div class="col-lg-6">
+                    <div class="acordion" id="accordion">
                         <div class="card different_card">
                             <div class="card-header" id="headingOne">
                                 <h5 class="mb-0">
@@ -236,11 +258,13 @@
                             </div>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                                 <div class="card-body">
-                                    <p class="section_description">Stack follows the BEM naming convention that
+                                    <p class="section_description description_acordeon">Stack follows the BEM naming
+                                        convention that
                                         focusses on logical code readability is reflected in both the HTML and CSS.
                                         Interactive elements such as accordions and tabs follow the same markup
                                         patterns making rapid development easier for developers and beginners alike.</p>
-                                    <p class="section_description">Add to this the thoughtfully presented
+                                    <p class="section_description description_acordeon">Add to this the thoughtfully
+                                        presented
                                         documentation, featuring code highlighting, snippets, clas customizer
                                         explanation and you've got yourself one powerful value package.</p>
                                 </div>
@@ -258,11 +282,13 @@
                             </div>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                                 <div class="card-body">
-                                    <p class="section_description">Stack follows the BEM naming convention that
+                                    <p class="section_description description_acordeon">Stack follows the BEM naming
+                                        convention that
                                         focusses on logical code readability is reflected in both the HTML and CSS.
                                         Interactive elements such as accordions and tabs follow the same markup
                                         patterns making rapid development easier for developers and beginners alike.</p>
-                                    <p class="section_description">Add to this the thoughtfully presented
+                                    <p class="section_description description_acordeon">Add to this the thoughtfully
+                                        presented
                                         documentation, featuring code highlighting, snippets, clas customizer
                                         explanation and you've got yourself one powerful value package.</p>
                                 </div>
@@ -348,6 +374,7 @@
         </div>
     </div>
 
+    <!-- footer -->
     <footer class="main_footer">
         <div class="container">
             <div class="row">
