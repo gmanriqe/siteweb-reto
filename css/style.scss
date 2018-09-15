@@ -432,8 +432,36 @@ MEDIA QUERIE
 //change breack
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .main_different {
+    .section_description {
+      width: 100%;
+    }
     .description_left {
+      text-align: center;
       img {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .main_description {
+    .section_description {
+      padding-right: 0;
+    }
+    .description_right {
+      margin-top: 60px;
+      text-align: center;
+      img {
+        width: 100%;
+        max-width: 550px;
+      }
+    }
+    .main_course {
+        .section_title {
+            margin-top: 60px;
+        }
+      .section_description {
         width: 100%;
       }
     }
@@ -458,7 +486,49 @@ MEDIA QUERIE
   }
   .main_banner {
     .banner_left {
-        margin-top: 150px
-      }
+      margin-top: 150px;
+    }
   }
+
+  .main_description {
+    .section_description {
+      padding-right: 0;
+    }
+    .description_right {
+      margin-top: 60px;
+      text-align: center;
+      img {
+        width: 100%;
+      }
+    }
+    .main_course {
+      .section_description {
+        width: 100%;
+      }
+    }
+  }
+
+  .main_different {
+    .section_description {
+      width: 100%;
+    }
+    .description_left {
+      text-align: center;
+      img {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+    .main_footer {
+        .footer {
+            ul {
+                margin-bottom: 15px;
+            }
+        }
+    }
 }
