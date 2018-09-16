@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <!-- Style -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <title>Calificalo SAC</title>
 </head>
 
@@ -29,12 +29,13 @@
                 <div class="container">
                     <!-- para no romper estructura con el position fixed-top debera estar la clase container dentro de la clase navbar-->
                     <a class="navbar-brand main_logo" href="#">stack</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    <button class="navbar-toggler menu_icon" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <i class="fas fa-bars"></i>
                     </button>
                     <div class="menu collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav d-flex justify-content-end align-items-lg-center">
+                        <ul class="navbar-nav d-flex justify-content-end align-items-center">
                             <li class="nav-item">
                                 <!--active-->
                                 <a class="nav-link" href="#">Home <i class="fas fa-angle-down"></i></a>
@@ -91,9 +92,9 @@
                         <p class="section_description">Launching an attractive and scalable website quickly and
                             affordably is important for modern
                             startups - Stack offers massive value without looking 'bargain-bin'.</p>
-                        <span class="description_more">Learn More
+                        <a href="#" class="description_more">Learn More
                             <i class="fas fa-angle-double-right"></i>
-                        </span>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -143,42 +144,42 @@
                         <div class="main_track">
                             <h4 class="track_title">Mechanical Engineering</h4>
                             <p class="track_description">Following BEM conventions for readability</p>
-                            <span class="section_more">Learn More</span>
+                            <a href="#" class="section_more">Learn More</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="main_track">
                             <h4 class="track_title">Media & Communications</h4>
                             <p class="track_description">Following BEM conventions for readability</p>
-                            <span class="section_more">Learn More</span>
+                            <a href="#" class="section_more">Learn More</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="main_track">
                             <h4 class="track_title">Biomedical Engineering</h4>
                             <p class="track_description">Following BEM conventions for readability</p>
-                            <span class="section_more">Learn More</span>
+                            <a href="#" class="section_more">Learn More</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="main_track">
                             <h4 class="track_title">Psychological Sciences</h4>
                             <p class="track_description">Following BEM conventions for readability</p>
-                            <span class="section_more">Learn More</span>
+                            <a href="#" class="section_more">Learn More</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="main_track">
                             <h4 class="track_title">Masters of Teaching</h4>
                             <p class="track_description">Following BEM conventions for readability</p>
-                            <span class="section_more">Learn More</span>
+                            <a href="#" class="section_more">Learn More</a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="main_track">
                             <h4 class="track_title">Master of Psychology</h4>
                             <p class="track_description">Following BEM conventions for readability</p>
-                            <span class="section_more">Learn More</span>
+                            <a href="#" class="section_more">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -307,20 +308,21 @@
                 <div class="col-md-4 col-lg-4">
                     <div class="banner_footer_image">
                         <img src="img/banner-footer.jpg" alt="">
-                        <a class="banner_footer_title d-flex justify-content-center align-items-center">Future Students</a>
+                        <a href="#NoHayEnlace" class="banner_footer_title d-flex justify-content-center align-items-center">Future
+                            Students</a>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4">
                     <div class="banner_footer_image">
                         <img src="img/banner-footer-center.jpg" alt="">
-                        <a class="banner_footer_title d-flex justify-content-center align-items-center">Current
+                        <a href="#NoHayEnlace" class="banner_footer_title d-flex justify-content-center align-items-center">Current
                             Students</a>
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4">
                     <div class="banner_footer_image">
                         <img src="img/banner-footer.jpg" alt="">
-                        <a class="banner_footer_title d-flex justify-content-center align-items-center">Alumni</a>
+                        <a href="#NoHayEnlace" class="banner_footer_title d-flex justify-content-center align-items-center">Alumni</a>
                     </div>
                 </div>
             </div>
@@ -412,7 +414,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- JS -->
-    <script src="js/app.js"></script>
+    <script src="js/app.min.js"></script>
 </body>
 
 </html>
