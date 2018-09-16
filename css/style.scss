@@ -20,6 +20,19 @@ body {
   font-size: 12px;
   border: none;
   text-transform: uppercase;
+  &:active:focus {
+    box-shadow: none;
+  }
+  &:active {
+    border-color: none;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.menu_calificalo {
+  background-color: rgba(0,0,0,.4);
 }
 
 .padding_section {
@@ -53,43 +66,56 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
+
+
 /******************
 MENU
 ******************/
 .main_menu {
   position: relative;
   z-index: 3;
-  .main_logo {
-    font-size: 25px;
-    font-weight: 900;
-    color: var(--white);
-  }
-  .menu {
-    ul {
-      li {
-        &:not(:last-child) {
-          margin-right: 10px;
-        }
-        &:nth-last-of-type(2) {
-          margin-right: 40px;
-        }
-        .nav-link {
-          font-size: 10px;
-          color: rgba(#fff, 0.5);
-          text-transform: uppercase;
-          letter-spacing: 0.6px;
-          i {
-            font-size: 10px;
+  nav {
+    transition: all .4s;
+    .main_logo {
+        font-size: 25px;
+        font-weight: 900;
+        color: var(--white);
+      }
+      .menu {
+        ul {
+          width: 100%;
+          li {
+            &:not(:last-child) {
+              margin-right: 10px;
+            }
+            &:nth-last-of-type(2) {
+              margin-right: 40px;
+            }
+            .nav-link {
+              font-size: 10px;
+              color: rgba(#fff, 0.5);
+              text-transform: uppercase;
+              letter-spacing: 0.6px;
+              &:hover {
+                  color: var(--white);
+              }
+              &:focus {
+                color: var(--white);
+                font-weight: 900;
+              }
+              i {
+                font-size: 10px;
+              }
+            }
+            .btn-menu {
+              padding: 8px 30px;
+              font-size: 10px;
+              font-weight: 700;
+              letter-spacing: 0.6px;
+            }
           }
         }
-        .btn-menu {
-          padding: 8px 30px;
-          font-size: 10px;
-          font-weight: 700;
-          letter-spacing: 0.6px;
-        }
       }
-    }
   }
 }
 
@@ -117,9 +143,12 @@ BANNER
     z-index: 1;
   }
   .banner_left {
-    margin-top: 250px;
     position: relative;
     z-index: 2;
+    height: calc(100vh - 56px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .banner_title {
       font-size: 40px;
       font-weight: 300;
@@ -198,6 +227,9 @@ DESCRIPTION
       font-weight: 300;
       font-size: 14px;
       border-color: var(--bd-input);
+      &:focus {
+        box-shadow: none;
+      }
     }
     input {
       &::placeholder {
@@ -212,6 +244,19 @@ DESCRIPTION
         border-color: var(--bd-input);
         background-color: var(--bg-input);
       }
+    }
+    button.btn_calificalo {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &:active:focus {
+            box-shadow: none;
+          }
+          &:active {
+            border-color: none;
+          }
+          &:focus {
+            box-shadow: none;
+          }
     }
   }
 
@@ -263,9 +308,18 @@ INSCRIPTION
     .inscription_description {
       margin: 40px 0;
     }
-    button {
+    button.btn_calificalo {
       padding: 10px 40px;
       text-transform: uppercase;
+      &:active:focus {
+        box-shadow: none;
+      }
+      &:active {
+        border-color: none;
+      }
+      &:focus {
+        box-shadow: none;
+      }
     }
   }
 }
@@ -294,6 +348,9 @@ DIFFERENT
           color: var(--title-acordeon);
           font-size: 12px;
           padding-left: 0;
+          &:focus {
+            text-decoration: none;
+          }
           &:hover {
             text-decoration: none;
           }
@@ -344,9 +401,6 @@ BANNER FOOTER
   .banner_footer_image {
     height: 180px;
     position: relative;
-    cursor: pointer;
-    &:hover img {
-    }
     img {
       display: block;
 
@@ -366,6 +420,11 @@ BANNER FOOTER
       height: 100%;
 
       background-color: rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+      &:hover {
+        color: var(--white);
+        background-color: rgba(0, 0, 0, 0.7);
+      }
     }
   }
 }
@@ -411,6 +470,12 @@ FOOTER
   }
   .footer_social_network {
     margin-right: 25px;
+    &:hover i {
+      transform: translateY(-7px);
+    }
+    i {
+      transition: all .5s;
+    }
   }
   & a {
     color: var(--gris);
@@ -458,9 +523,9 @@ MEDIA QUERIE
       }
     }
     .main_course {
-        .section_title {
-            margin-top: 60px;
-        }
+      .section_title {
+        margin-top: 60px;
+      }
       .section_description {
         width: 100%;
       }
@@ -486,7 +551,9 @@ MEDIA QUERIE
   }
   .main_banner {
     .banner_left {
-      margin-top: 150px;
+      .banner_title {
+        font-size: 25px;
+      }
     }
   }
 
@@ -524,11 +591,11 @@ MEDIA QUERIE
 }
 
 @media screen and (max-width: 575px) {
-    .main_footer {
-        .footer {
-            ul {
-                margin-bottom: 15px;
-            }
-        }
+  .main_footer {
+    .footer {
+      ul {
+        margin-bottom: 15px;
+      }
     }
+  }
 }
